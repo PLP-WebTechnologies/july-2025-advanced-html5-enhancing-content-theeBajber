@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+
+    fieldset {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #ccc;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML5 Enhanced Content & User Form</h1>
+    <p>Explore the use of structured content, embedded media, and a complete interactive form using HTML5 features only.</p>
+  </header>
+
+  <section>
+    <h2>🔗 Key Topics Covered</h2>
+    <ul>
+      <li>HTML5 Lists and Tables</li>
+      <li>Embedding Audio and Video</li>
+      <li>Building Accessible Forms</li>
+      <li>Using Native Validation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Available Courses</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course</th>
+          <th>Level</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Web Development</td>
+          <td>Beginner</td>
+          <td>8 Weeks</td>
+        </tr>
+        <tr>
+          <td>Data Science</td>
+          <td>Intermediate</td>
+          <td>12 Weeks</td>
+        </tr>
+        <tr>
+          <td>UI/UX Design</td>
+          <td>Beginner</td>
+          <td>6 Weeks</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>🎵 Media</h2>
+    <p>Listen to the audio and watch the introduction video below:</p>
+
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br /><br />
+
+    <video width="320" height="240" controls muted autoplay>
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>📝 Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required minlength="3"><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Preferences</legend>
+
+        <label for="course">Choose a Course:</label><br>
+        <select id="course" name="course" required>
+          <option value="">-- Select --</option>
+          <option value="web">Web Development</option>
+          <option value="data">Data Science</option>
+          <option value="design">UI/UX Design</option>
+        </select><br><br>
+
+        <label for="mode">Mode of Learning:</label><br>
+        <input type="radio" id="online" name="mode" value="online" required>
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="mode" value="offline">
+        <label for="offline">Offline</label><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any special needs or preferences..."></textarea><br><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Setup</legend>
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm" required minlength="6"><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms & Conditions</label><br><br>
+
+        <input type="submit" value="Register">
+      </fieldset>
+
+    </form>
+  </section>
+
+</body>
+</html>
